@@ -1,0 +1,121 @@
+#bg-video {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-image: url(../img/tm-astro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*carrera xd*/
+.body {
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+img#coche1 {
+   position: absolute;
+}
+
+img#coche2 {
+  position: absolute;
+  margin-top: 80px;
+}
+
+.zona_boton {
+ text-align: center;
+ width: 100%;
+ margin-top: 240px;
+}
+
+/*menu chiquito*/
+.cuadrado {
+    width: 100px;           /* Ancho de 150 píxeles */
+    height: 50px;          /* Alto de 150 píxeles */
+    background:rgb(9, 10, 10);        /* Fondo de color rojo */
+    border-color: #000;
+}
+
+/*footer*/
+.pie-pagina{
+    width: 100%;
+    background-color:gray
+
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pie-pagina .grupo-1 .box figure img{
+    margin-top: 30px;
+    width: 150px;
+    height: 140px;
+    
+}
+.pie-pagina .grupo-1 .box h2{
+    color:black;
+    margin-bottom: 25px;
+    font-size: 20px;
+
+}
+.pie-pagina .grupo-1 .box p{
+    color: black;
+    margin-bottom: 10px;
+
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(250, 247, 247);
+    margin-right: 10px;
+    background-color:brown;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: black;
+}
+
+.pie-pagina .grupo-2{
+    background-color:gray;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+
+    }
+}
